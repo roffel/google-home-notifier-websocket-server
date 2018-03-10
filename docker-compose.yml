@@ -1,0 +1,9 @@
+version: '2'
+services:
+  web:
+    build: .
+    command: bash -c "/etc/init.d/dbus start && avahi-daemon --no-drop-root -D  && npm start"
+    volumes:
+      - .:/usr/app/
+    ports:
+      - "8080:8080"

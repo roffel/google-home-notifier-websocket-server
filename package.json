@@ -1,0 +1,15 @@
+{
+  "name": "google_home_notifier_websocket_server",
+  "version": "0.0.1",
+  "description": "Wraps the Google Home Notifier in a websocket server.",
+  "author": "Rutger Roffel",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1",
+    "ws": "^5.0.0",
+    "google-home-notifier": "^1.2.0"
+  }
+}
